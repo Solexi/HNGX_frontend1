@@ -1,0 +1,54 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: absolute;
+    top: 50px;
+    left: 22%;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.profile {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+a {
+    display: block;
+    margin-top: 60px;
+    text-decoration: none;
+    color: #003366;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.details {
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 28px;
+    padding: 12px;
+    width: 90%; 
+    border-radius: 8px;
+    margin-bottom: 24px;
+    background-color: transparent;
+    border: 0.5px solid #003366;
+}
