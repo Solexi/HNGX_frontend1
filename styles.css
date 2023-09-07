@@ -5,8 +5,8 @@ body {
 
 .container {
     position: absolute;
-    top: 50px;
-    left: 22%;
+    top: 20%;
+    left: 30vw;
     width: 800px;
     margin: 0 auto;
     padding: 20px 0;
