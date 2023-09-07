@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HNGX Stage 1 Task - Frontend</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="profile">
-            <img src="https://avatars.githubusercontent.com/u/82169299?s=400&u=6931745a7b568d6412c0600bb91e3ac352f10313&v=4" alt="Sophix" data-testid="slackDisplayImage">
+            <img src="https://avatars.githubusercontent.com/u/82169299?s=400&u=6931745a7b568d6412c0600bb91e3ac352f10313&v=4"
+                alt="Sophix" data-testid="slackDisplayImage">
             <h3 data-testid="slackUserName">Sophia Ezeh</h3>
             <div class="details">
-                <p data-testid="currentDayOfTheWeek">Thursday</p>
-                <p data-testid="currentUTCTime">1694072649198</p>
+                <p id="currentDayOfTheWeek" data-testid="currentDayOfTheWeek"></p>
+                <p id="currentUTCTime" data-testid="currentUTCTime"></p>
                 <p data-testid="myTrack">FRONTEND</p>
             </div>
             <a href="https://github.com/Solexi/HNGX_frontend1.git" data-testid="githubURL">GitHub Repository</a>
         </div>
     </div>
+    <script>
+        const currentUTCTimeMillis = Date.now();
+        const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        document.getElementById("currentUTCTime").textContent = currentUTCTimeMillis;
+
+        const currentDate = new Date();
+        const dayOfWeek = currentDate.getDay();
+        const currentDayOfTheWeek = daysOfWeek[dayOfWeek]
+        document.getElementById("currentDayOfTheWeek").textContent = currentDayOfTheWeek;
+        console.log(dayOfWeek)
+    </script>
 </body>
+
 </html>

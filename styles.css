@@ -4,14 +4,12 @@ body {
 }
 
 .container {
-    top: 20%;
-    margin-left: 22vw;
-    margin-right: 22vw;
     width: 800px;
     margin-top: 50px;
     padding: 20px 0;
     background-color: #fff;
     border-radius: 5px;
+    justify-content: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
